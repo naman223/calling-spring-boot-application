@@ -1,0 +1,14 @@
+{
+  "id": "zipkin-service-demo-two",
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mic2.docker.oraclecorp.com/zipkin-service-two:1.0",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8087, "hostPort": 0 }
+      ]
+    },
+    "volumes": []
+  }
+}
